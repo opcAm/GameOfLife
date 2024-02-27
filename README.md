@@ -1,1 +1,1 @@
-# GameInLife
+# GameOfLife Amanda Conde
