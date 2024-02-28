@@ -16,6 +16,7 @@
 		BA13EEB72B8E77F3004C1100 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEB62B8E77F3004C1100 /* ControlsView.swift */; };
 		BA13EEB92B8E7839004C1100 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEB82B8E7839004C1100 /* CellView.swift */; };
 		BA13EEBB2B8E7881004C1100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBA2B8E7881004C1100 /* GameView.swift */; };
+		BA13EEBE2B8FA8B0004C1100 /* Matriz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BA13EEB62B8E77F3004C1100 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		BA13EEB82B8E7839004C1100 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		BA13EEBA2B8E7881004C1100 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matriz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		BA13EE892B8E6A69004C1100 /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
-				BA13EEB62B8E77F3004C1100 /* ControlsView.swift */,
-				BA13EEB82B8E7839004C1100 /* CellView.swift */,
-				BA13EEB42B8E6C3E004C1100 /* Grid.swift */,
-				BA13EEBA2B8E7881004C1100 /* GameView.swift */,
+				BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */,
 				BA13EE8A2B8E6A69004C1100 /* GameOfLifeApp.swift */,
 				BA13EE8C2B8E6A69004C1100 /* ContentView.swift */,
+				BA13EEBC2B8FA850004C1100 /* NaoUsados */,
 				BA13EE8E2B8E6A6B004C1100 /* Assets.xcassets */,
 				BA13EE902B8E6A6B004C1100 /* Preview Content */,
 			);
@@ -123,6 +123,17 @@
 				BA13EE9B2B8E6A6B004C1100 /* GameOfLifeTests.swift */,
 			);
 			path = GameOfLifeTests;
+			sourceTree = "<group>";
+		};
+		BA13EEBC2B8FA850004C1100 /* NaoUsados */ = {
+			isa = PBXGroup;
+			children = (
+				BA13EEB82B8E7839004C1100 /* CellView.swift */,
+				BA13EEB62B8E77F3004C1100 /* ControlsView.swift */,
+				BA13EEB42B8E6C3E004C1100 /* Grid.swift */,
+				BA13EEBA2B8E7881004C1100 /* GameView.swift */,
+			);
+			path = NaoUsados;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA13EEB72B8E77F3004C1100 /* ControlsView.swift in Sources */,
+				BA13EEBE2B8FA8B0004C1100 /* Matriz.swift in Sources */,
 				BA13EE8D2B8E6A69004C1100 /* ContentView.swift in Sources */,
 				BA13EE8B2B8E6A69004C1100 /* GameOfLifeApp.swift in Sources */,
 				BA13EEB52B8E6C3E004C1100 /* Grid.swift in Sources */,

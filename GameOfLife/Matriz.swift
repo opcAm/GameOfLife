@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-func criaMatriz (){
+func criaMatriz () -> [[Int]] {
     var matriz: [[Int]] = []
     var linha: [Int] = []
     
-    for i in 0...9 {
-        for j in 0...9 {
+    for _ in 0...9 {
+        for _ in 0...9 {
             linha.append(Int.random(in: 0...1))
         }
         
@@ -20,4 +20,5 @@ func criaMatriz (){
         // nao deixa acumular numeros nas linhas de baixo
         linha.removeAll()
     }
+    return matriz
 }
