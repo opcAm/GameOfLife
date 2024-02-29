@@ -34,7 +34,15 @@ struct ContentView: View {
                 }
                 
             } label: {
-                Text("oi")
+                ZStack{
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(width: 200, height: 40)
+                        .foregroundStyle(Color.yellow)
+                    Text("aperte aqui")
+                        .foregroundStyle(Color.brown)
+                        .font(.title)
+                        .bold()
+                }
             }
         }.onAppear {
             matriz = criaMatriz()

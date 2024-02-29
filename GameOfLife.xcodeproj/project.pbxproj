@@ -17,6 +17,7 @@
 		BA13EEB92B8E7839004C1100 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEB82B8E7839004C1100 /* CellView.swift */; };
 		BA13EEBB2B8E7881004C1100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBA2B8E7881004C1100 /* GameView.swift */; };
 		BA13EEBE2B8FA8B0004C1100 /* Matriz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */; };
+		BA13EEC02B8FC53C004C1100 /* Verificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBF2B8FC53C004C1100 /* Verificacao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BA13EEB82B8E7839004C1100 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		BA13EEBA2B8E7881004C1100 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matriz.swift; sourceTree = "<group>"; };
+		BA13EEBF2B8FC53C004C1100 /* Verificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verificacao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		BA13EE892B8E6A69004C1100 /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
+				BA13EEBF2B8FC53C004C1100 /* Verificacao.swift */,
 				BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */,
 				BA13EE8A2B8E6A69004C1100 /* GameOfLifeApp.swift */,
 				BA13EE8C2B8E6A69004C1100 /* ContentView.swift */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA13EEC02B8FC53C004C1100 /* Verificacao.swift in Sources */,
 				BA13EEB72B8E77F3004C1100 /* ControlsView.swift in Sources */,
 				BA13EEBE2B8FA8B0004C1100 /* Matriz.swift in Sources */,
 				BA13EE8D2B8E6A69004C1100 /* ContentView.swift in Sources */,

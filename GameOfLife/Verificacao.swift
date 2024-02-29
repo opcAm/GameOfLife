@@ -6,19 +6,42 @@
 //
 
 import SwiftUI
-
-struct Verificacao: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//função vai verificar os vizinhos vivos
+extension ContentView{
+    
+    func verificacao (i: Int, j: Int, matriz:[[Int]]) -> Int{
+        var qtdVivo = 0
+        if matriz.count-1 != 0 && matriz[0].count-1 != 0{
+            for minL in max (0, i - 1)...min (matriz.count-1, i, +1){
+                for minC in max(0, j - 1 )...min (matriz [0].count-1, j + 1){
+                    if !(i == minL || j == minC) {
+                        if matriz[minL][minC] == 1{
+                            qtdVivo += 1
+                        }
+                    }
+                }
+            }
+        }
+        return qtdVivo
+    }
+    
+    func regrasGeracao (i: Int, j: Int, matriz: [[Int]]){
+        var vizinhos = verificacao(i: i, j: j, matriz: matriz)
+        
+        //se estiver vivo e for menor que 2 vizinhos: morre OU se vivo e for maior que 3 vizinhos: morre
+        if vizinhos < 2 || vizinhos > 3 {
+            self.matriz[i][j]
+        }
+        
+        
+        //se vivo e for 2 ou 3 vizinhos: vive
+        if self.matriz[i][j] == 1 && (vizinhos == 2 || vizinhos == 3){
+            self.matriz[i][j] = 1
+        }
+        
+        //se morto e a quantidade de vizinhos for = a 3: vive
+        if self.matriz[i][j] == 0 && vizinhos == 3{
+            self.matriz[i][j] = 1
+        }
     }
 }
-
-#Preview {
-    Verificacao()
-}
-
-//variavel que retorna um inteiro que fala quantos vizinhos tem
-//encontrar o elemento, mas o estado dele ainda nao importa
-//switch case com as possibilidades
-//verificar se o board existe: 
-

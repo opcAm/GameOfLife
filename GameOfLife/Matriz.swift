@@ -8,7 +8,7 @@
 import SwiftUI
 
 func criaMatriz () -> [[Int]] {
-    var matriz: [[Int]] = []
+    @State var matriz: [[Int]] = []
     var linha: [Int] = []
     
     for _ in 0...9 {
