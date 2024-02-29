@@ -23,12 +23,7 @@ struct ContentView: View {
             }
             
             Button {
-                for i in 0...matriz.count - 1{
-                    for j in 0...matriz.count - 1{
-                        print(matriz[i][j], terminator: "  ")
-                    }
-                    print("\n")
-                }
+                regrasGeracao()
                 
             } label: {
                 ZStack{
