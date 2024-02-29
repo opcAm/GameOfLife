@@ -25,23 +25,32 @@ extension ContentView{
         return qtdVivo
     }
     
-    func regrasGeracao (i: Int, j: Int, matriz: [[Int]]){
-        var vizinhos = verificacao(i: i, j: j, matriz: matriz)
+    func regrasGeracao(){
+        var matrizCopia = [[]]
         
-        //se estiver vivo e for menor que 2 vizinhos: morre OU se vivo e for maior que 3 vizinhos: morre
-        if vizinhos < 2 || vizinhos > 3 {
-            self.matriz[i][j]
+        //
+        for i in 0...matriz.count - 1{
+            for j in 0...matriz[0].count - 1{
+                var vizinhos = verificacao(i: i, j: j, matriz: matriz)
+                
+                //se estiver vivo e for menor que 2 vizinhos: morre OU se vivo e for maior que 3 vizinhos: morre
+                if vizinhos < 2 || vizinhos > 3 {
+                    matrizCopia[i][j]
+                }
+                
+                
+                //se vivo e for 2 ou 3 vizinhos: vive
+                if self.matriz[i][j] == 1 && (vizinhos == 2 || vizinhos == 3){
+                    matrizCopia[i][j] = 1
+                }
+                
+                //se morto e a quantidade de vizinhos for = a 3: vive
+                if self.matriz[i][j] == 0 && vizinhos == 3{
+                    matrizCopia[i][j] = 1
+                }
+            }
+            
         }
         
-        
-        //se vivo e for 2 ou 3 vizinhos: vive
-        if self.matriz[i][j] == 1 && (vizinhos == 2 || vizinhos == 3){
-            self.matriz[i][j] = 1
-        }
-        
-        //se morto e a quantidade de vizinhos for = a 3: vive
-        if self.matriz[i][j] == 0 && vizinhos == 3{
-            self.matriz[i][j] = 1
-        }
     }
 }

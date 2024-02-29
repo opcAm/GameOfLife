@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State var matriz: [[Int]] = []
     
-    
     var body: some View {
         VStack {
             ForEach(matriz.indices, id: \.self) {i in
@@ -23,9 +22,7 @@ struct ContentView: View {
                 }
             }
             
-            Button{
-                matriz = criaMatriz()
-                print(matriz)
+            Button {
                 for i in 0...matriz.count - 1{
                     for j in 0...matriz.count - 1{
                         print(matriz[i][j], terminator: "  ")
@@ -44,8 +41,9 @@ struct ContentView: View {
                         .bold()
                 }
             }
-        }.onAppear {
-            matriz = criaMatriz()
+        }
+        .onAppear {
+            criaMatriz()
         }
     }
 }

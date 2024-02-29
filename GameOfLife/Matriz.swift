@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
-
-func criaMatriz () -> [[Int]] {
-    @State var matriz: [[Int]] = []
-    var linha: [Int] = []
+extension ContentView {
     
-    for _ in 0...9 {
-        for _ in 0...9 {
-            linha.append(Int.random(in: 0...1))
-        }
+    func criaMatriz () {
+        var matriz: [[Int]] = []
+        var linha: [Int] = []
         
-        matriz.append(linha)
-        // nao deixa acumular numeros nas linhas de baixo
-        linha.removeAll()
+        for _ in 0...9 {
+            for _ in 0...9 {
+                linha.append(Int.random(in: 0...1))
+            }
+            
+            matriz.append(linha)
+            // nao deixa acumular numeros nas linhas de baixo
+            linha.removeAll()
+        }
+        self.matriz = matriz
     }
-    return matriz
 }
