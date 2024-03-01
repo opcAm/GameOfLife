@@ -18,6 +18,11 @@
 		BA13EEBB2B8E7881004C1100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBA2B8E7881004C1100 /* GameView.swift */; };
 		BA13EEBE2B8FA8B0004C1100 /* Matriz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */; };
 		BA13EEC02B8FC53C004C1100 /* Verificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEBF2B8FC53C004C1100 /* Verificacao.swift */; };
+		BA13EEC22B920A5F004C1100 /* eugdwieuD\.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13EEC12B920A5F004C1100 /* eugdwieuD\.swift */; };
+		BAF003F12B924DF3008B3AD2 /* MusticaPro-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAF003F02B924DF3008B3AD2 /* MusticaPro-SemiBold.otf */; };
+		BAF003F22B924E1F008B3AD2 /* MusticaPro-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAF003F02B924DF3008B3AD2 /* MusticaPro-SemiBold.otf */; };
+		BAF003F32B924E1F008B3AD2 /* MusticaPro-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAF003F02B924DF3008B3AD2 /* MusticaPro-SemiBold.otf */; };
+		BAF003F52B92501E008B3AD2 /* SF-Compact-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAF003F42B92501E008B3AD2 /* SF-Compact-Rounded-Semibold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,10 @@
 		BA13EEBA2B8E7881004C1100 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matriz.swift; sourceTree = "<group>"; };
 		BA13EEBF2B8FC53C004C1100 /* Verificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verificacao.swift; sourceTree = "<group>"; };
+		BA13EEC12B920A5F004C1100 /* eugdwieuD\.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "eugdwieuD\\.swift"; sourceTree = "<group>"; };
+		BAF003EC2B924173008B3AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BAF003F02B924DF3008B3AD2 /* MusticaPro-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MusticaPro-SemiBold.otf"; sourceTree = "<group>"; };
+		BAF003F42B92501E008B3AD2 /* SF-Compact-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +110,13 @@
 		BA13EE892B8E6A69004C1100 /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
+				BAF003F42B92501E008B3AD2 /* SF-Compact-Rounded-Semibold.otf */,
+				BAF003F02B924DF3008B3AD2 /* MusticaPro-SemiBold.otf */,
+				BAF003EC2B924173008B3AD2 /* Info.plist */,
 				BA13EEBF2B8FC53C004C1100 /* Verificacao.swift */,
 				BA13EEBD2B8FA8B0004C1100 /* Matriz.swift */,
 				BA13EE8A2B8E6A69004C1100 /* GameOfLifeApp.swift */,
 				BA13EE8C2B8E6A69004C1100 /* ContentView.swift */,
-				BA13EEBC2B8FA850004C1100 /* NaoUsados */,
 				BA13EE8E2B8E6A6B004C1100 /* Assets.xcassets */,
 				BA13EE902B8E6A6B004C1100 /* Preview Content */,
 			);
@@ -123,6 +134,7 @@
 		BA13EE9A2B8E6A6B004C1100 /* GameOfLifeTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA13EEBC2B8FA850004C1100 /* NaoUsados */,
 				BA13EE9B2B8E6A6B004C1100 /* GameOfLifeTests.swift */,
 			);
 			path = GameOfLifeTests;
@@ -135,6 +147,7 @@
 				BA13EEB62B8E77F3004C1100 /* ControlsView.swift */,
 				BA13EEB42B8E6C3E004C1100 /* Grid.swift */,
 				BA13EEBA2B8E7881004C1100 /* GameView.swift */,
+				BA13EEC12B920A5F004C1100 /* eugdwieuD\.swift */,
 			);
 			path = NaoUsados;
 			sourceTree = "<group>";
@@ -244,6 +257,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA13EE922B8E6A6B004C1100 /* Preview Assets.xcassets in Resources */,
+				BAF003F52B92501E008B3AD2 /* SF-Compact-Rounded-Semibold.otf in Resources */,
+				BAF003F12B924DF3008B3AD2 /* MusticaPro-SemiBold.otf in Resources */,
 				BA13EE8F2B8E6A6B004C1100 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF003F22B924E1F008B3AD2 /* MusticaPro-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF003F32B924E1F008B3AD2 /* MusticaPro-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +292,7 @@
 				BA13EE8D2B8E6A69004C1100 /* ContentView.swift in Sources */,
 				BA13EE8B2B8E6A69004C1100 /* GameOfLifeApp.swift in Sources */,
 				BA13EEB52B8E6C3E004C1100 /* Grid.swift in Sources */,
+				BA13EEC22B920A5F004C1100 /* eugdwieuD\.swift in Sources */,
 				BA13EEBB2B8E7881004C1100 /* GameView.swift in Sources */,
 				BA13EEB92B8E7839004C1100 /* CellView.swift in Sources */,
 			);
@@ -441,6 +459,7 @@
 				DEVELOPMENT_TEAM = C73FLD543W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GameOfLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -470,6 +489,7 @@
 				DEVELOPMENT_TEAM = C73FLD543W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GameOfLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
