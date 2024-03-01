@@ -11,34 +11,67 @@ struct ContentView: View {
     @State var matriz: [[Int]] = []
     
     var body: some View {
-        VStack {
-            ForEach(matriz.indices, id: \.self) {i in
-                HStack{
-                    ForEach(matriz.indices, id: \.self){ j in
-                        Rectangle()
-                            .frame(width: 30, height: 30)
-                            .foregroundStyle(matriz[i][j] == 1 ? Color.yellow : Color.brown)
+        ZStack{
+            Color(.brown).ignoresSafeArea(.all)
+            VStack {
+                Text("Game of Life")
+                    .font(.custom("MusticaPro-SemiBold", size: 80))
+//                    .fontWeight(.heavy)
+                    .foregroundStyle(Color("Color2"))
+                
+                Text("Amanda's Version")
+                    .font(.custom("MusticaPro-SemiBold", size: 25))
+//                    .fontWeight(.heavy)
+                    .foregroundStyle(Color("Color2"))
+                
+                ForEach(matriz.indices, id: \.self ){ linha in
+                    HStack{
+                        ForEach(matriz.indices, id: \.self) { coluna in
+                            Image(matriz[linha][coluna] == 1 ? "livro" : "kindle")
+                                .resizable()
+                                .frame(width: 90, height: 90)
+                                .onTapGesture {
+                                    if matriz[linha][coluna] == 1{
+                                        matriz[linha][coluna] = 0
+                                    } else {
+                                        matriz[linha][coluna] = 1
+                                    }
+                                }
+                        }
+                    }
+                }
+                Spacer()
+                
+                Button {
+                    regrasGeracao()
+                } label: {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 220, height: 60)
+                            .foregroundStyle(Color.yellow)
+                        Text("Aperte aqui")
+                            .foregroundStyle(Color.brown)
+                            .font(.custom("MusticaPro-SemiBold", size: 40))
+                    }
+                }
+                
+                Button {
+                    criaMatriz()
+                    
+                } label: {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 220, height: 60)
+                            .foregroundStyle(Color.yellow)
+                        Text("Novo jogo!")
+                            .foregroundStyle(Color.brown)
+                            .font(.custom("MusticaPro-SemiBold", size: 40))
                     }
                 }
             }
-            
-            Button {
-                regrasGeracao()
-                
-            } label: {
-                ZStack{
-                    RoundedRectangle(cornerRadius: 15)
-                        .frame(width: 200, height: 40)
-                        .foregroundStyle(Color.yellow)
-                    Text("aperte aqui")
-                        .foregroundStyle(Color.brown)
-                        .font(.title)
-                        .bold()
-                }
+            .onAppear {
+                criaMatriz()
             }
-        }
-        .onAppear {
-            criaMatriz()
         }
     }
 }
